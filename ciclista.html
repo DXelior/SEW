@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Alejandro Tellado" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon del proyecto -->
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a title="Página principal" href="index.html">LaVuelta2026</a></h1>
+
+        <nav>
+            <a title="Página principal" href="index.html">Inicio</a>
+            <a title="Página del ciclista asignado" href="ciclista.html" aria-current="page">Ciclista</a>
+            <a title="Página del equipo asignado" href="equipo.html">Equipo</a>
+            <a title="Página de la etapa asignada" href="etapa.html">Etapa</a>
+            <a title="Página de la meteorología de la etapa" href="meteorologia.html">Meteorología</a>
+            <a title="Página de la clasificación" href="clasificaciones.html">Clasificaciones</a>
+            <a title="Página de juegos" href="juegos.html">Juegos</a>
+            <a title="Página para ayuda al usuario" href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label="migas">
+        <ol>
+            <li><a title="Página principal" href="index.html">Inicio</a>>> Ciclista</li>
+        </ol>
+    </nav>
+    <main>
+        <h2>Gianmarco Garofoli</h2>
+        <section>
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>Gianmarco Garofoli</li>
+                <li>06/10/2002</li>
+                <li>Italia</li>
+                <li>SOUDAL QUICK-STEP</li>
+                <li>123</li>
+            </ul>
+            <picture>
+                <!-- para pantallas pequeñas menores de 768px -->
+                <source media="(max-width: 768px)" srcset="multimedia/gianmarcoGrande.png" width="150" height="177">
+                <!-- para pantallas medianas menores de 1024px -->
+                <source media="(max-width: 1024px)" srcset="multimedia/gianmarcoPeque.png" width="200" height="129">
+                <!-- para el resto de dispositivos -->
+                <img src="multimedia/gianmarco.png"
+                    alt="Imagen del ciclista Gianmarco Garofoli en su maillot de su equipo SOUDAL QUICK-STEP"
+                    width="300" height="455" />
+            </picture>
+            <!--<img src=gianmarco.png alt="Imagen del ciclista Gianmarco Garofoli en su maillot de su equipo SOUDAL QUICK-STEP"
+            width="300" height="455" /> -->
+        </section>
+        <section>
+            <h4>Multimedia</h4>
+            <p>Equipo <a href="https://www.lavuelta.es/es/equipo/SOQ/soudal-quick-step">SOUDAL QUICK-STEP</a> en la
+                Vuelta
+                Ciclista a España 2026.</p>
+            <video controls poster="multimedia/Poster_Equipo_2.png">
+                <source src="multimedia/Presentación.mp4" type="video/mp4" />
+                <source src="multimedia/Presentación_SOUDAL_QUICK-STEP.webm" type="video/webm" />
+                Su navegador no soporta el elemento video
+            </video>
+            <audio controls>
+                <source src="multimedia/SOUDUL_PARRAFO.wav" type="audio/wav" />
+                <source src="multimedia/SOUDUL_PARRAFO.mp3" type="audio/mp3" />
+                Su navegador no soporta el elemento audio
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alejandro Tellado</p>
+        <address>
+            <a href="mailto:UO307746@uniovi.es">UO307746@uniovi.es</a>
+        </address>
+    </footer>
+
+</body>
+
+</html>

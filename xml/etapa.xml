@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapas SYSTEM "etapa.dtd">
+
+<etapas>
+    <etapa>
+        <nombre>Almuñécar a Loja</nombre>
+        <número>13</número>
+        <longitud unidades="km">192.8</longitud>
+        <fecha>2026-09-04</fecha>
+        <tiempo>04:34:00</tiempo>
+        <velocidadMediaGanador unidades="km/h">42.23</velocidadMediaGanador>
+        <desnivel unidades="m">3400</desnivel>
+        <lugarSalida>Almuñécar</lugarSalida>
+        <lugarMeta>Loja</lugarMeta>
+        <tipo>Media Montaña</tipo>
+
+        <referencias>
+            <referencia>https://www.lavuelta.es/</referencia>
+            <referencia>https://www.granadadigital.es/vuelta-almunecar-loja-recorrido/</referencia>
+            <referencia>https://www.youtube.com/watch?v=4wCFUyI4XVg</referencia>
+        </referencias>
+
+        <fotografías>
+            <fotografía>Corredores Etapa 13.jpg</fotografía>
+            <fotografía>Salida Vuelta.jpg</fotografía>
+            <fotografía>Meta Vuelta.jpg</fotografía>
+        </fotografías>
+
+        <vídeos>
+            <vídeo>Video Vuelta.mp4</vídeo>
+        </vídeos>
+
+        <sonidos>
+            <sonido>Podcast Vuelta.mp3</sonido>
+        </sonidos>
+
+        <datosSalida
+            longitud="-3.691"
+            latitud="36.733"
+            altitud="10"
+            unidadesLongitud="grados"
+            unidadesLatitud="grados"
+            unidadesAltitud="m">Salida de Almuñécar</datosSalida>
+
+        <datosMeta
+            longitud="-4.15129"
+            latitud="37.16887"
+            altitud="453"
+            unidadesLongitud="grados"
+            unidadesLatitud="grados"
+            unidadesAltitud="m">Meta en Loja</datosMeta>
+
+        <hitos>
+            <hito
+                longitud="-3.553"
+                latitud="36.820"
+                altitud="820"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="31.2"
+                unidadesD="km">
+                <tipo>Montaña</tipo>
+                <categoría>1ª categoría</categoría>
+            </hito>
+
+            <hito
+                longitud="-3.701"
+                latitud="37.012"
+                altitud="1348"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="83.4"
+                unidadesD="km">
+                <tipo>Montaña</tipo>
+                <categoría>3ª categoría</categoría>
+            </hito>
+
+            <hito
+                longitud="-3.882"
+                latitud="37.135"
+                altitud="650"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="145.0"
+                unidadesD="km">
+                <tipo>Sprint</tipo>
+                <categoría>Intermedio</categoría>
+            </hito>
+
+            <hito
+                longitud="-3.985"
+                latitud="37.210"
+                altitud="1034"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="155.4"
+                unidadesD="km">
+                <tipo>Montaña</tipo>
+                <categoría>2ª categoría</categoría>
+            </hito>
+        </hitos>
+
+        <puntosAnónimos>
+            <puntoAnónimo
+                longitud="-3.670"
+                latitud="36.738"
+                altitud="25"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="5.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.620"
+                latitud="36.745"
+                altitud="45"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="12.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.580"
+                latitud="36.780"
+                altitud="420"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="22.5"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.553"
+                latitud="36.820"
+                altitud="820"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="31.2"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.570"
+                latitud="36.880"
+                altitud="610"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="42.5"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.610"
+                latitud="36.930"
+                altitud="720"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="54.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.650"
+                latitud="36.975"
+                altitud="850"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="68.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.701"
+                latitud="37.012"
+                altitud="1348"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="83.4"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.750"
+                latitud="37.030"
+                altitud="890"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="97.1"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.800"
+                latitud="37.050"
+                altitud="825"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="108.3"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.830"
+                latitud="37.080"
+                altitud="895"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="122.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.882"
+                latitud="37.135"
+                altitud="650"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="145.0"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-3.985"
+                latitud="37.210"
+                altitud="1034"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="155.4"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-4.020"
+                latitud="37.310"
+                altitud="820"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="168.3"
+                unidadesD="km" />
+
+            <puntoAnónimo
+                longitud="-4.080"
+                latitud="37.250"
+                altitud="480"
+                unidadesLongitud="grados"
+                unidadesLatitud="grados"
+                unidadesAltitud="m"
+                distancia="180.9"
+                unidadesD="km" />
+        </puntosAnónimos>
+
+        <podioEtapaDatos>
+            <corredorEtapa tiempoRespectoPrimero="PT0S">Wout van Aert</corredorEtapa>
+            <corredorEtapa tiempoRespectoPrimero="PT0S">Valentin Paret-Peintre</corredorEtapa>
+            <corredorEtapa tiempoRespectoPrimero="PT24S">James Matthew Brennan</corredorEtapa>
+        </podioEtapaDatos>
+
+        <podioGeneralDatos>
+            <corredorGeneral tiempoRespectoPrimero="PT0S">Enric Mas</corredorGeneral>
+            <corredorGeneral tiempoRespectoPrimero="PT1M45S">Primož Roglič</corredorGeneral>
+            <corredorGeneral tiempoRespectoPrimero="PT2M6S">Felix Gall</corredorGeneral>
+        </podioGeneralDatos>
+
+        <podioGeneralEquíposDatos>
+            <equipoGeneral tiempoRespectoPrimero="PT0S">DECATHLON CMA CGM TEAM</equipoGeneral>
+            <equipoGeneral tiempoRespectoPrimero="PT1H7M36S">BAHRAIN VICTORIOUS</equipoGeneral>
+            <equipoGeneral tiempoRespectoPrimero="PT1H11M13S">NETCOMPANY INEOS CYCLING TEAM</equipoGeneral>
+        </podioGeneralEquíposDatos>
+    </etapa>
+</etapas>

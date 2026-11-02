@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Alejandro Tellado" />
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon del proyecto -->
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a title="Página principal" href="index.html">LaVuelta2026</a></h1>
+
+        <nav>
+            <a title="Página principal" href="index.html">Inicio</a>
+            <a title="Página del ciclista asignado" href="ciclista.html">Ciclista</a>
+            <a title="Página del equipo asignado" href="equipo.html">Equipo</a>
+            <a title="Página de la etapa asignada" href="etapa.html">Etapa</a>
+            <a title="Página de la meteorología de la etapa" href="meteorologia.html">Meteorología</a>
+            <a title="Página de la clasificación" href="clasificaciones.html">Clasificaciones</a>
+            <a title="Página de juegos" href="juegos.html" aria-current="page">Juegos</a>
+            <a title="Página para ayuda al usuario" href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+    <nav aria-label="migas">
+        <ol>
+            <li><a title="Página principal" href="index.html">Inicio</a>>> Juegos</li>
+        </ol>
+    </nav>
+    <main>
+        <h2>Juegos</h2>
+        <section>
+            <h3>¿Conoces la etapa?</h3>
+            <p>Juego de 10 preguntas sobre la información de la etapa de La Vuelta 2026 desarrollada en las sesiones de
+                XML.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Etapa 13: Almuñécar a Loja</legend>
+
+                    <p>
+                        <label for="num-etapa">Número de la etapa:</label>
+                        <input type="number" id="num-etapa" min="1" max="21" />
+                    </p>
+
+                    <p>
+                        <label for="fecha-etapa">Fecha de celebración de la etapa:</label>
+                        <input type="date" id="fecha-etapa" />
+                    </p>
+
+                    <p>
+                        <label for="salida-etapa">Lugar de salida:</label>
+                        <select id="salida-etapa">
+                            <option value="" selected>Seleccione una opción</option>
+                            <option value="Oviedo">Almuñécar</option>
+                            <option value="Madrid">Luarca</option>
+                            <option value="Barcelona">Ávila</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="llegada-etapa">Lugar de llegada:</label>
+                        <select id="llegada-etapa">
+                            <option value="" selected>Seleccione una opción</option>
+                            <option value="Gijón">Gijón</option>
+                            <option value="Madrid">Loja</option>
+                            <option value="Barcelona">Cáceres</option>
+                        </select>
+                    </p>
+
+                    <p>Tipo de etapa:</p>
+                    <p>
+                        <input type="radio" id="tipo-llana" name="tipo-etapa" value="Llana" />
+                        <label for="tipo-llana">Llana</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="tipo-media" name="tipo-etapa" value="Media montaña" />
+                        <label for="tipo-media">Media montaña</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="tipo-montana" name="tipo-etapa" value="Montaña" />
+                        <label for="tipo-montana">Montaña</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="tipo-cri" name="tipo-etapa" value="Contrarreloj individual" />
+                        <label for="tipo-cri">Contrarreloj individual</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="tipo-cre" name="tipo-etapa" value="Contrarreloj por equipos" />
+                        <label for="tipo-cre">Contrarreloj por equipos</label>
+                    </p>
+
+                    <p>Hitos presentes en la etapa:</p>
+                    <p>
+                        <input type="checkbox" id="hito-puerto" value="Puerto de montaña" />
+                        <label for="hito-puerto">Puerto de montaña</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="hito-especial" value="Puerto categoría especial" />
+                        <label for="hito-especial">Puerto categoría especial</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="hito-sprint" value="Sprint intermedio" />
+                        <label for="hito-sprint">Sprint intermedio</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="hito-bonificado" value="Sprint bonificado" />
+                        <label for="hito-bonificado">Sprint bonificado</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="hito-ninguno" value="Sin hitos" />
+                        <label for="hito-ninguno">Sin hitos</label>
+                    </p>
+
+                    <p>
+                        <label for="dureza-etapa">Valoración de la dureza (1 al 10):</label>
+                        <input type="range" id="dureza-etapa" min="1" max="10" />
+                    </p>
+
+                    <p>
+                        <label for="longitud-etapa">Longitud de la etapa (km):</label>
+                        <input type="number" id="longitud-etapa" min="0" step="0.1" />
+                    </p>
+
+                    <p>
+                        <label for="desnivel-etapa">Desnivel acumulado (m):</label>
+                        <input type="number" id="desnivel-etapa" min="0" />
+                    </p>
+
+                    <p>
+                        <label for="descripcion-etapa">Descripción breve de la etapa:</label>
+                        <textarea id="descripcion-etapa" rows="4" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="nombre-participante">Nombre del participante:</label>
+                        <input type="text" id="nombre-participante" />
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar respuestas</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alejandro Tellado</p>
+        <address>
+            <a href="mailto:UO307746@uniovi.es">UO307746@uniovi.es</a>
+        </address>
+    </footer>
+
+</body>
+
+</html>

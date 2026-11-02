@@ -1,0 +1,74 @@
+/* ***************************************/
+/*             LaVuelta2026              */
+/*          Estilos generales            */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Alejandro Tellado*/
+/*  Correo electrónico (uniovi): uo307746@uniovi.es*/
+/*  Grupo de laboratorio: PL-02          */
+/* ***************************************/
+
+/* Gama cromática y estudio de contraste WCAG AAA:
+   - Color principal: #1A365D (Azul oscuro) 
+     * Contraste con color secundario (#F9F0F5): 10.5:1 (AAA)
+     * Contraste con color blanco (#FFFFFF): 12.6:1 (AAA)
+   - Color secundario: #F9F0F5 (Rosado)
+     * Contraste con color negro (#000000): 12.16:1 (AAA)
+     * Contraste con color principal (#1A365D): 10.5:1 (AAA)
+   - Color blanco: #FFFFFF
+   - Color negro: #000000
+*/
+
+/* Especificidad: 010 */
+:root {
+    --color-principal: #1A365D;
+    --color-secundario: #F9F0F5;
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+}
+
+/* Especificidad: 001 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+/* Especificidad: 002 */
+header,
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+/* Especificidad: 002 */
+header a,
+footer a {
+    color: var(--color-blanco);
+    /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    text-decoration-line: none;
+}
+
+/* Especificidad: 011 */
+a[aria-current] {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+/* Especificidad: 023 */
+section:has(picture)>ul>li:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Especificidad: 023 */
+section:has(picture)>ul>li:nth-child(3) {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/* Especificidad: 023 */
+section:has(picture)>ul>li:nth-child(4) {
+    font-weight: bold;
+}

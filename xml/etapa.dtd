@@ -1,0 +1,104 @@
+<!ELEMENT etapas (etapa+)>
+
+<!ELEMENT etapa (nombre, número, longitud, fecha, tiempo, velocidadMediaGanador, desnivel, lugarSalida, lugarMeta, tipo, referencias, fotografías, vídeos, sonidos, datosSalida, datosMeta, hitos, puntosAnónimos, podioEtapaDatos, podioGeneralDatos, podioGeneralEquíposDatos)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT número (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT velocidadMediaGanador (#PCDATA)>
+<!ELEMENT desnivel (#PCDATA)>
+<!ELEMENT lugarSalida (#PCDATA)>
+<!ELEMENT lugarMeta (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT fotografías (fotografía+)>
+<!ELEMENT fotografía (#PCDATA)>
+
+<!ELEMENT vídeos (vídeo+)>
+<!ELEMENT vídeo (#PCDATA)>
+
+<!ELEMENT sonidos (sonido+)>
+<!ELEMENT sonido (#PCDATA)>
+
+<!ELEMENT datosSalida (#PCDATA)>
+<!ELEMENT datosMeta (#PCDATA)>
+
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (tipo, categoría)>
+<!ELEMENT categoría (#PCDATA)>
+
+<!ELEMENT puntosAnónimos (puntoAnónimo*)>
+<!ELEMENT puntoAnónimo EMPTY>
+
+<!ELEMENT podioEtapaDatos (corredorEtapa+)>
+<!ELEMENT corredorEtapa (#PCDATA)>
+
+<!ELEMENT podioGeneralDatos (corredorGeneral+)>
+<!ELEMENT corredorGeneral (#PCDATA)>
+
+<!ELEMENT podioGeneralEquíposDatos (equipoGeneral+)>
+<!ELEMENT equipoGeneral (#PCDATA)>
+
+
+<!ATTLIST longitud
+    unidades CDATA #REQUIRED>
+
+<!ATTLIST velocidadMediaGanador
+    unidades CDATA #REQUIRED>
+
+<!ATTLIST desnivel
+    unidades CDATA #REQUIRED>
+
+
+<!ATTLIST datosSalida
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    unidadesLongitud CDATA #REQUIRED
+    unidadesLatitud CDATA #REQUIRED
+    unidadesAltitud CDATA #REQUIRED>
+
+<!ATTLIST datosMeta
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    unidadesLongitud CDATA #REQUIRED
+    unidadesLatitud CDATA #REQUIRED
+    unidadesAltitud CDATA #REQUIRED>
+
+
+<!ATTLIST hito
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    unidadesLongitud CDATA #REQUIRED
+    unidadesLatitud CDATA #REQUIRED
+    unidadesAltitud CDATA #REQUIRED
+    distancia CDATA #REQUIRED
+    unidadesD CDATA #REQUIRED>
+
+
+<!ATTLIST puntoAnónimo
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    unidadesLongitud CDATA #REQUIRED
+    unidadesLatitud CDATA #REQUIRED
+    unidadesAltitud CDATA #REQUIRED
+    distancia CDATA #REQUIRED
+    unidadesD CDATA #REQUIRED>
+
+
+<!ATTLIST corredorEtapa
+    tiempoRespectoPrimero CDATA #REQUIRED>
+
+<!ATTLIST corredorGeneral
+    tiempoRespectoPrimero CDATA #REQUIRED>
+
+<!ATTLIST equipoGeneral
+    tiempoRespectoPrimero CDATA #REQUIRED>

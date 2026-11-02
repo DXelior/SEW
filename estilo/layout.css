@@ -1,0 +1,151 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos: Alejandro Tellado*/
+/*  Correo electrónico (uniovi): uo307746@uniovi.es*/
+/*  Grupo de laboratorio: PL-02          */
+/* ***************************************/
+
+/* Especificidad: 001 */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+    margin: 0;
+}
+
+/* Especificidad: 001 */
+header {
+    grid-area: cabecera;
+}
+
+/* Especificidad: 011 */
+header+nav {
+    grid-area: migas;
+}
+
+/* Especificidad: 001 */
+main {
+    grid-area: contenido;
+}
+
+/* Especificidad: 001 */
+footer {
+    grid-area: pie;
+}
+
+
+/* Especificidad: 001 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Especificidad: 001 */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Especificidad: 011 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Especificidad: 012 */
+section:has(picture)>h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad: 012 */
+section:has(picture)>picture {
+    order: 1;
+}
+
+/* Especificidad: 012 */
+section:has(picture)>ul {
+    list-style: none;
+    order: 2;
+}
+
+/* Especificidad: 011 */
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Especificidad: 011 */
+section:has(article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 012 */
+section:has(article)>h3 {
+    grid-column: 1 / -1;
+}
+
+/* Tabletas (<= 1024px) */
+@media (max-width: 1024px) {
+
+    /* Especificidad: 011 */
+    section:has(article) {
+        grid-template-columns: repeat(2, 1fr);
+        /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    }
+
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+        /*ADVERTENCIA: redefinición de la propiedad con valor original row */
+    }
+
+
+    /* Especificidad: 011 */
+    header+nav {
+        display: none;
+        /*ADVERTENCIA: redefinición de la propiedad con valor original block */
+    }
+}
+
+/* Dispositivos móviles (<= 768px) */
+@media (max-width: 768px) {
+
+    /* Especificidad: 011 */
+    section:has(article) {
+        grid-template-columns: 1fr;
+        /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    }
+
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+        /*ADVERTENCIA: redefinición de la propiedad con valor original row */
+    }
+
+    /* Especificidad: 011 */
+    header+nav {
+        display: none;
+        /*ADVERTENCIA: redefinición de la propiedad con valor original block */
+    }
+}
